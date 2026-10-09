@@ -1,7 +1,10 @@
 name: Test Workflow
 
 on:
-  workflow_dispatch  # allows manual trigger from the Actions tab
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
